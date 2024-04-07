@@ -1,4 +1,5 @@
-﻿@{
+﻿@model NoSQL_Proyecto.Models.LoginViewModel
+@{
     ViewData["Title"] = "Login";
 }
 @{
@@ -38,22 +39,22 @@
                   <p class="mb-0">Ingrese su usuario y contraseña</p>
                 </div>
                 <div class="card-body">
-                  <form role="form">
-                    <div class="mb-3">
-                      <input type="email" class="form-control form-control-lg" placeholder="Usuario" aria-label="Email">
-                    </div>
-                    <div class="mb-3">
-                      <input type="email" class="form-control form-control-lg" placeholder="Contraseña" aria-label="Password">
-                    </div>
-                    <div class="text-center">
-                      <button type="button" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Ingresar</button>
-                    </div>
-                  </form>
-                </div>
+                                    <form method="post" asp-action="Login">
+                                        <div class="mb-3">
+                                            <input asp-for="Username" type="text" name="Username" class="form-control form-control-lg" placeholder="Usuario" aria-label="Text">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input asp-for="Password" type="password" name="Password" class="form-control form-control-lg" placeholder="Contraseña" aria-label="Password">
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Ingresar</button>
+                                        </div>
+                                    </form>
+                                </div>
                 <div class="card-footer text-center pt-0 px-lg-2 px-1">
                   <p class="mb-4 text-sm mx-auto">
                     No tienes una cuenta?
-                    <a href="javascript:;" class="text-primary text-gradient font-weight-bold">Registrarse</a>
+                    <a href="@Url.Action("Register", "Account")" class="text-primary text-gradient font-weight-bold">Registrarse</a>
                   </p>
                 </div>
               </div>

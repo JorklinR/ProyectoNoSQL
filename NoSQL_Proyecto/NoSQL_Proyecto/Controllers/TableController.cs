@@ -14,7 +14,7 @@ namespace NoSQL_Proyecto.Controllers
 
         public IActionResult Tables()
         {
-            var collectionName = "Articulos"; // Reemplaza "NombreDeTuColeccion" con el nombre real de tu colección
+            var collectionName = "Articulos"; 
             var articulos = _articulosService.GetAsync(collectionName).Result;
             return View(articulos);
         }

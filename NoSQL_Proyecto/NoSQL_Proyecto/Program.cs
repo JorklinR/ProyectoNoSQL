@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using NoSQL_Proyecto.Data;
 using NoSQL_Proyecto.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,12 @@ builder.Services.Configure<DatabaseSettings>(
     builder.Configuration.GetSection("Conection"));
 
 builder.Services.AddSingleton<ArticulosService>();
+builder.Services.AddSingleton<UsuarioService>();
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Account/Login"; // La ruta a la página de inicio de sesión
+    });
 
 // Agregar servicios de Razor Pages
 builder.Services.AddRazorPages();
@@ -41,7 +48,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Account}/{action=Login}/{id?}");
 app.MapRazorPages();
 
 // Imprimir un mensaje de confirmación en la consola
