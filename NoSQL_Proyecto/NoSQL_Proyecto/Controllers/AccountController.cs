@@ -33,6 +33,73 @@ namespace NoSQL_Proyecto.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Profile(Usuarios model, IFormFile? imageFile)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    var usuarioActual = await _usuarioService.GetAsync("Usuarios", model.Id);
+
+                    usuarioActual.Nombre = string.IsNullOrEmpty(model.Nombre) ? usuarioActual.Nombre : model.Nombre;
+                    usuarioActual.Mail = string.IsNullOrEmpty(model.Mail) ? usuarioActual.Mail : model.Mail;
+                    usuarioActual.Phone = model.Phone == 0 ? usuarioActual.Phone : model.Phone;
+
+                    if (imageFile != null && imageFile.Length > 0)
+                    {
+                        // Leer los datos de la imagen y convertirlos a un arreglo de bytes
+                        using (var memoryStream = new MemoryStream())
+                        {
+                            await imageFile.CopyToAsync(memoryStream);
+                            usuarioActual.Image = memoryStream.ToArray();
+                        }
+                    }
+
+                    // Actualizar el usuario en la base de datos
+                    await _usuarioService.UpdateAsync("Usuarios", usuarioActual.Id, usuarioActual);
+
+                    ViewBag.Success = true;
+
+                 
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError(string.Empty, "Error al editar el usuario: " + ex.Message);
+                }
+            }
+
+            // Si hay errores de validación, ocurrirá esto
+            return View("Profile", model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteImage(ObjectId id)
+        {
+            try
+            {
+                var usuarioActual = await _usuarioService.GetAsync("Usuarios", id);
+
+                // Eliminar la imagen del usuario
+                usuarioActual.Image = null;
+
+                // Actualizar el usuario en la base de datos
+                await _usuarioService.UpdateAsync("Usuarios", usuarioActual.Id, usuarioActual);
+
+                ViewBag.Success = true;
+
+                // Redireccionar al usuario de vuelta a la vista de perfil
+                return RedirectToAction("Profile", new { id = usuarioActual.Id });
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, "Error al eliminar la imagen del usuario: " + ex.Message);
+                // Si hay errores de validación, ocurrirá esto
+                return View("Profile");
+            }
+        }
+
+
 
         public IActionResult Login()
         {
@@ -97,6 +164,8 @@ namespace NoSQL_Proyecto.Controllers
                     Password = model.Password,
                     Mail = model.Mail,
                     Fecha_Creacion = DateTime.UtcNow,
+                    id_Tipo_Usuario = ObjectId.Parse("660dc3e881c5953b240d5f51"),
+                    Active = true,
 
                     // Asigna otros campos de usuario según sea necesario
                 };

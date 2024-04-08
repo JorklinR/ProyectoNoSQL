@@ -11,21 +11,21 @@ namespace NoSQL_Proyecto.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ArticulosService _articulosService;
+        private readonly UsuarioService _usuarioService;
 
-        public HomeController(ILogger<HomeController> logger, ArticulosService articulosService)
+        public HomeController(ILogger<HomeController> logger, ArticulosService articulosService, UsuarioService usuarioService)
         {
             _logger = logger;
             _articulosService = articulosService;
+            _usuarioService = usuarioService;
         }
 
 
         public async Task<IActionResult> Index()
         {
-            // Nombre de la colección predeterminado
-            string collectionName = "Articulos";
+         
 
-            // Obtener todos los artículos
-            var articulos = await _articulosService.GetAsync(collectionName);
+            var articulos = await _articulosService.GetAsync("Articulos");
 
             // Calcular la suma de los valores de los artículos
             decimal suma = 0;
@@ -36,6 +36,13 @@ namespace NoSQL_Proyecto.Controllers
 
             // Pasar la suma a la vista
             ViewBag.SumaArticulos = suma;
+
+
+            //Calcular usuarios activos
+          int totalUsuariosActivos = _usuarioService.GetTotalUsuariosActivos();
+
+            //Pasar la suma de usuarios
+         ViewBag.TotalUsuariosActivos = totalUsuariosActivos;
 
             return View();
         }

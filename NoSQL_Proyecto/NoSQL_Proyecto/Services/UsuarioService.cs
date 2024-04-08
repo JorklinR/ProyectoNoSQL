@@ -66,6 +66,14 @@ namespace NoSQL_Proyecto.Services
         {
             return await _usuariosCollection.Find(u => u.Mail == Mail).FirstOrDefaultAsync();
         }
+        public int GetTotalUsuariosActivos()
+        {
+            var totalUsuariosActivos = _usuariosCollection.AsQueryable()
+                .Where(u => u.Active)
+                .Count();
+
+            return totalUsuariosActivos;
+        }
     }
 
 }
