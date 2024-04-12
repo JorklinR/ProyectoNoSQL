@@ -30,4 +30,10 @@ namespace NoSQL_Proyecto.Models
 
 
     }
+
+    public class ArticuloViewModel
+    {
+        public double Precio { get; set; }
+        public string Descripcion { get; set; }
+    }
 }

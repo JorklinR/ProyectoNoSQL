@@ -34,6 +34,8 @@ namespace NoSQL_Proyecto.Controllers
                 suma += articulo.Unidad_Stock;
             }
 
+        
+
             // Pasar la suma a la vista
             ViewBag.SumaArticulos = suma;
 
