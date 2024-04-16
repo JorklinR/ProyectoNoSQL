@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B35CACE7-98A3-4911-9F1D-91EC0119E691}|NoSQL_Proyecto\\NoSQL_Proyecto.csproj|c:\\users\\owens\\onedrive\\documentos\\github\\proyectonosql\\nosql_proyecto\\nosql_proyecto\\views\\table\\editproveedor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B35CACE7-98A3-4911-9F1D-91EC0119E691}|NoSQL_Proyecto\\NoSQL_Proyecto.csproj|solutionrelative:nosql_proyecto\\views\\table\\editproveedor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B35CACE7-98A3-4911-9F1D-91EC0119E691}|NoSQL_Proyecto\\NoSQL_Proyecto.csproj|c:\\users\\owens\\onedrive\\documentos\\github\\proyectonosql\\nosql_proyecto\\nosql_proyecto\\views\\table\\proveedor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B35CACE7-98A3-4911-9F1D-91EC0119E691}|NoSQL_Proyecto\\NoSQL_Proyecto.csproj|solutionrelative:nosql_proyecto\\views\\table\\proveedor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B35CACE7-98A3-4911-9F1D-91EC0119E691}|NoSQL_Proyecto\\NoSQL_Proyecto.csproj|c:\\users\\owens\\onedrive\\documentos\\github\\proyectonosql\\nosql_proyecto\\nosql_proyecto\\controllers\\tablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B35CACE7-98A3-4911-9F1D-91EC0119E691}|NoSQL_Proyecto\\NoSQL_Proyecto.csproj|solutionrelative:nosql_proyecto\\controllers\\tablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B35CACE7-98A3-4911-9F1D-91EC0119E691}|NoSQL_Proyecto\\NoSQL_Proyecto.csproj|c:\\users\\owens\\onedrive\\documentos\\github\\proyectonosql\\nosql_proyecto\\nosql_proyecto\\models\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B35CACE7-98A3-4911-9F1D-91EC0119E691}|NoSQL_Proyecto\\NoSQL_Proyecto.csproj|solutionrelative:nosql_proyecto\\models\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B35CACE7-98A3-4911-9F1D-91EC0119E691}|NoSQL_Proyecto\\NoSQL_Proyecto.csproj|c:\\users\\owens\\onedrive\\documentos\\github\\proyectonosql\\nosql_proyecto\\nosql_proyecto\\services\\proveedorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B35CACE7-98A3-4911-9F1D-91EC0119E691}|NoSQL_Proyecto\\NoSQL_Proyecto.csproj|solutionrelative:nosql_proyecto\\services\\proveedorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B35CACE7-98A3-4911-9F1D-91EC0119E691}|NoSQL_Proyecto\\NoSQL_Proyecto.csproj|c:\\users\\owens\\onedrive\\documentos\\github\\proyectonosql\\nosql_proyecto\\nosql_proyecto\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B35CACE7-98A3-4911-9F1D-91EC0119E691}|NoSQL_Proyecto\\NoSQL_Proyecto.csproj|solutionrelative:nosql_proyecto\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 228,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,26 +42,78 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProveedorService.cs",
+              "DocumentMoniker": "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\Services\\ProveedorService.cs",
+              "RelativeDocumentMoniker": "NoSQL_Proyecto\\Services\\ProveedorService.cs",
+              "ToolTip": "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\Services\\ProveedorService.cs",
+              "RelativeToolTip": "NoSQL_Proyecto\\Services\\ProveedorService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T03:55:49.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "NoSQL_Proyecto\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "NoSQL_Proyecto\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAE0AAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:48:45.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditProveedor.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\Views\\Table\\EditProveedor.cshtml",
+              "RelativeDocumentMoniker": "NoSQL_Proyecto\\Views\\Table\\EditProveedor.cshtml",
+              "ToolTip": "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\Views\\Table\\EditProveedor.cshtml",
+              "RelativeToolTip": "NoSQL_Proyecto\\Views\\Table\\EditProveedor.cshtml",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAGAAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:32:09.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Proveedor.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\Views\\Table\\Proveedor.cshtml",
+              "RelativeDocumentMoniker": "NoSQL_Proyecto\\Views\\Table\\Proveedor.cshtml",
+              "ToolTip": "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\Views\\Table\\Proveedor.cshtml",
+              "RelativeToolTip": "NoSQL_Proyecto\\Views\\Table\\Proveedor.cshtml",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAAEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:24:02.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Proveedor.cs",
               "DocumentMoniker": "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\Models\\Proveedor.cs",
               "RelativeDocumentMoniker": "NoSQL_Proyecto\\Models\\Proveedor.cs",
               "ToolTip": "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\Models\\Proveedor.cs",
               "RelativeToolTip": "NoSQL_Proyecto\\Models\\Proveedor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAtAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBoAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-16T03:04:23.046Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TableController.cs",
               "DocumentMoniker": "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\Controllers\\TableController.cs",
               "RelativeDocumentMoniker": "NoSQL_Proyecto\\Controllers\\TableController.cs",
               "ToolTip": "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\Controllers\\TableController.cs",
               "RelativeToolTip": "NoSQL_Proyecto\\Controllers\\TableController.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAwwEAAAAAiAAAA",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAkwF4AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-16T03:02:08.438Z",
               "EditorCaption": ""

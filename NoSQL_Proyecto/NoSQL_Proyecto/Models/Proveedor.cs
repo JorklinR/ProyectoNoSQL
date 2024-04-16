@@ -22,6 +22,7 @@ namespace NoSQL_Proyecto.Models
 
     public class ProveedorViewModel
     {
+        public ObjectId Id { get; set; }
         public string Nombre { get; set; }
         public ObjectId id_Tipo_Proveedor { get; set; }
         public string Direccion { get; set; }
