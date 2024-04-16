@@ -9,25 +9,25 @@ namespace NoSQL_Proyecto.Controllers
     {
         private readonly ArticulosService _articulosService;
         private readonly UsuarioService _usuarioService;
-        private readonly IngresosService _ingresosService;
+     
         private readonly MetodoPagoService _metodoPagoService;
         private readonly MotivoSalidaService _metodoSalidaService;
         private readonly ProveedorService _proveedorService;
-        private readonly SalidasService _salidaService;
+      
         private readonly TipoArticulosService _tipoArticulosService;
         private readonly TipoProveedoresService _tipoProveedoresService;
         private readonly TipoUsuariosService _tipoUsuariosService;
 
-        public TableController(ArticulosService articulosService, UsuarioService usuarioService, IngresosService ingresosService, MetodoPagoService metodoPagoService, MotivoSalidaService metodoSalidaService,
-               ProveedorService proveedorService, SalidasService salidaService, TipoArticulosService tipoArticulosService, TipoProveedoresService tipoProveedoresService, TipoUsuariosService tipoUsuariosService)
+        public TableController(ArticulosService articulosService, UsuarioService usuarioService, MetodoPagoService metodoPagoService, MotivoSalidaService metodoSalidaService,
+               ProveedorService proveedorService, TipoArticulosService tipoArticulosService, TipoProveedoresService tipoProveedoresService, TipoUsuariosService tipoUsuariosService)
         {
             _articulosService = articulosService;
             _usuarioService = usuarioService;
-            _ingresosService = ingresosService;
+            
             _metodoPagoService = metodoPagoService;
             _metodoSalidaService = metodoSalidaService;
             _proveedorService = proveedorService;
-            _salidaService = salidaService;
+            
             _tipoArticulosService = tipoArticulosService;
             _tipoProveedoresService = tipoProveedoresService;
             _tipoUsuariosService = tipoUsuariosService;
@@ -60,7 +60,37 @@ namespace NoSQL_Proyecto.Controllers
 
             return View();
 
+        }
 
+        public IActionResult Proveedor()
+        {
+            //Espacio para las variables
+            var proveedores = _proveedorService.GetAsync("Proveedor").Result;
+
+            // Espacio para las listas
+            List<ProveedorViewModel> proveedorViewModels = new List<ProveedorViewModel>();
+
+            // Espacio para los ForEach
+            foreach (var proveedor in proveedores)
+            {
+                
+                var proveedorViewModel = new ProveedorViewModel
+                {
+                     Nombre = proveedor.Nombre,
+                     id_Tipo_Proveedor = proveedor.id_Tipo_Proveedor,
+                     Direccion = proveedor.Direccion,
+                     Mail = proveedor.Mail,
+                     Phone = proveedor.Phone,
+                    Active = proveedor.Active
+    };
+
+                // Agregar el objeto ArticuloViewModel a la lista
+                proveedorViewModels.Add(proveedorViewModel);
+            }
+            // Pasar la lista  a la vista usando ViewBag
+            ViewBag.Proveedores = proveedorViewModels;
+
+            return View();
 
         }
 

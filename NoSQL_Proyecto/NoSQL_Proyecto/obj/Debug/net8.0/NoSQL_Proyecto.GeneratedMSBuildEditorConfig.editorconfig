@@ -9,71 +9,71 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NoSQL_Proyecto
 build_property.RootNamespace = NoSQL_Proyecto
-build_property.ProjectDir = C:\Users\Jorklin\Documents\GitHub\ProyectoNoSQL\NoSQL_Proyecto\NoSQL_Proyecto\
+build_property.ProjectDir = C:\Users\Owens\OneDrive\Documentos\GitHub\ProyectoNoSQL\NoSQL_Proyecto\NoSQL_Proyecto\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\Jorklin\Documents\GitHub\ProyectoNoSQL\NoSQL_Proyecto\NoSQL_Proyecto
+build_property.MSBuildProjectDirectory = C:\Users\Owens\OneDrive\Documentos\GitHub\ProyectoNoSQL\NoSQL_Proyecto\NoSQL_Proyecto
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Account/Login.cshtml]
+[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Account/Profile.cshtml]
+[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Account/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Account/Register.cshtml]
+[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Home/Index.cshtml]
+[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Home/Privacy.cshtml]
+[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Movimientos/Ingresos.cshtml]
+[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Movimientos/Ingresos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b3NcSW5ncmVzb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Movimientos/Salidas.cshtml]
+[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Movimientos/Salidas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b3NcU2FsaWRhcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Shared/Error.cshtml]
+[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Table/Tables.cshtml]
+[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Table/Tables.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcVGFibGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/_ViewImports.cshtml]
+[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/_ViewStart.cshtml]
+[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Shared/_Layout.cshtml]
+[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-u0ovfh8qk0

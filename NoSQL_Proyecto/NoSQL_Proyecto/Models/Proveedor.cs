@@ -23,7 +23,11 @@ namespace NoSQL_Proyecto.Models
     public class ProveedorViewModel
     {
         public string Nombre { get; set; }
+        public ObjectId id_Tipo_Proveedor { get; set; }
+        public string Direccion { get; set; }
         public string Mail { get; set; }
+        public int Phone { get; set; }
         public Boolean Active { get; set; }
+
     }
 }
