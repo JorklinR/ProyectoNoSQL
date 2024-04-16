@@ -5142,19 +5142,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jorklin\\.nuget\\packages\\": {}
+    "C:\\Users\\Owens\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jorklin\\Documents\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\NoSQL_Proyecto.csproj",
+      "projectUniqueName": "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\NoSQL_Proyecto.csproj",
       "projectName": "NoSQL_Proyecto",
-      "projectPath": "C:\\Users\\Jorklin\\Documents\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\NoSQL_Proyecto.csproj",
-      "packagesPath": "C:\\Users\\Jorklin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jorklin\\Documents\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\obj\\",
+      "projectPath": "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\NoSQL_Proyecto.csproj",
+      "packagesPath": "C:\\Users\\Owens\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jorklin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Owens\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5176,7 +5176,9 @@
         ]
       },
       "restoreAuditProperties": {
-        "enableAudit": "default"
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -5231,7 +5233,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

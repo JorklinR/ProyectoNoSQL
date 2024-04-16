@@ -16,6 +16,14 @@ builder.Services.Configure<DatabaseSettings>(
 
 builder.Services.AddSingleton<ArticulosService>();
 builder.Services.AddSingleton<UsuarioService>();
+builder.Services.AddSingleton<IngresosService>();
+builder.Services.AddSingleton<MetodoPagoService>();
+builder.Services.AddSingleton<MotivoSalidaService>();
+builder.Services.AddSingleton<ProveedorService>();
+builder.Services.AddSingleton<SalidasService>();
+builder.Services.AddSingleton<TipoArticulosService>();
+builder.Services.AddSingleton<TipoProveedoresService>();
+builder.Services.AddSingleton<TipoUsuariosService>();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {

@@ -1,0 +1,119 @@
+﻿@model NoSQL_Proyecto.Models.IngresosViewModel
+
+<body class="g-sidenav-show bg-gray-100">
+
+    <div class="container-fluid py-4">
+        <div class="row">
+            <div class="col-md-8">
+                <form method="post" asp-action="Ingresos" enctype="multipart/form-data">
+                    <div class="card">
+                        <div class="card-header pb-0">
+                            <div class="d-flex align-items-center">
+                                <p class="mb-0">Crear Ingreso</p>
+                                <button type="submit" class="btn btn-primary btn-sm ms-auto">Generar Ingreso</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-uppercase text-sm">Información de Ingreso</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">Fecha de Ingreso</label>
+                                        <input asp-for="Fecha_Ingreso" type="datetime-local" class="form-control" placeholder="Fecha Ingreso" aria-label="Fecha">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">Articulo</label>
+                                        <input asp-for="id_Articulo" type="text" class="form-control" placeholder="N de Articulo" disabled aria-label="Numero">
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">Cantidad Ingresada</label>
+                                        <input asp-for="Cantidad_Ingresada" type="text" class="form-control" placeholder="Cantidad Ingresada" aria-label="Ingreso">
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">Precio de Compra</label>
+                                        <input asp-for="Precio_Compra" type="text" class="form-control" placeholder="Precio de Compra" aria-label="Precio">
+
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">
+                                            Proveedor ID
+                                            <input asp-for="id_Proveedor" type="text" class="form-control" placeholder="Proveedor ID" disabled aria-label="Proveedor">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Tu código JavaScript y CSS aquí -->
+    <script>
+        handleRegisterResponse('@ViewBag.Success');
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        @if (ViewBag.Success != null && (bool)ViewBag.Success)
+        {
+            // Mostrar SweetAlert si el registro fue exitoso
+            <text>
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Creacion exitosa!',
+                    text: 'Se realizo creacion correctamente.',
+                    showConfirmButton: false,
+                    timer: 2000
+                }).then(() => {
+                    // Redirigir al usuario a la página de inicio de sesión
+                    window.location.href = '@Url.Action("Ingresos", "Movimientos")';
+                });
+            </text>
+        }
+        else if (ViewBag.Success != null && !(bool)ViewBag.Success)
+        {
+            // Mostrar SweetAlert si el registro falló
+            <text>
+                Swal.fire({
+                    icon: 'error',
+                    title: '¡Error al crear!',
+                    text: 'Hubo un problema al intentar crear los datos.',
+                    showConfirmButton: true
+                });
+            </text>
+        }
+    </script>
+
+
+    <!--   Core JS Files   -->
+    <script src="~/js/core/popper.min.js"></script>
+    <script src="~/js/core/bootstrap.min.js"></script>
+    <script src="~/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="~/js/plugins/smooth-scrollbar.min.js"></script>
+    <script>
+                                var win = navigator.platform.indexOf('Win') > -1;
+        if (win && document.querySelector('#sidenav-scrollbar')) {
+            var options = {
+                damping: '0.5'
+            }
+            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+        }
+    </script>
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="~/js//argon-dashboard.min.js?v=2.0.4"></script>
+
+</body>
