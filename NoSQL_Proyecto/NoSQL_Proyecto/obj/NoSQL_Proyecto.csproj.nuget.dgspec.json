@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\NoSQL_Proyecto.csproj": {}
+    "C:\\Users\\Jorklin\\Documents\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\NoSQL_Proyecto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\NoSQL_Proyecto.csproj": {
+    "C:\\Users\\Jorklin\\Documents\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\NoSQL_Proyecto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\NoSQL_Proyecto.csproj",
+        "projectUniqueName": "C:\\Users\\Jorklin\\Documents\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\NoSQL_Proyecto.csproj",
         "projectName": "NoSQL_Proyecto",
-        "projectPath": "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\NoSQL_Proyecto.csproj",
-        "packagesPath": "C:\\Users\\Owens\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Owens\\OneDrive\\Documentos\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\obj\\",
+        "projectPath": "C:\\Users\\Jorklin\\Documents\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\NoSQL_Proyecto.csproj",
+        "packagesPath": "C:\\Users\\Jorklin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jorklin\\Documents\\GitHub\\ProyectoNoSQL\\NoSQL_Proyecto\\NoSQL_Proyecto\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Owens\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jorklin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -36,9 +36,7 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
+          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -93,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -29,6 +29,7 @@ namespace NoSQL_Proyecto.Services
             return await collection.Find(_ => true).ToListAsync();
         }
 
+
         public async Task<Usuarios?> GetAsync(string collectionName, ObjectId id)
         {
             var collection = GetCollection(collectionName);

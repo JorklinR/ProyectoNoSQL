@@ -1,0 +1,116 @@
+﻿@model NoSQL_Proyecto.Models.Tipo_Proveedores
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<body class="g-sidenav-show bg-gray-100">
+
+
+    <div class="container-fluid py-4">
+        <div class="row">
+            <div class="col-md-8">
+                <form method="post" asp-action="EditTipo" enctype="multipart/form-data">
+                    <div class="card">
+                        <div class="card-header pb-0">
+
+                            <div class="d-flex align-items-center">
+                                <p class="mb-0">Editar tipo de proveedores</p>
+                                <button type="submit" class="btn btn-primary btn-sm ms-auto">Guardar cambios</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <input type="hidden" name="Id" value="@Model.Id">
+                            <p class="text-uppercase text-sm">Información de tipo de proveedor</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="form-control-label">Nombre</label>
+                                        <input asp-for="Descripcion_Proveedor" class="form-control" type="text" value="@Model.Descripcion_Proveedor" name="Descripcion_Proveedor">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-profile" style="display: flex;justify-content: center; align-items: center;">
+
+                    <div class="d-flex justify-content-center">
+                        <form method="post" asp-action="DeleteTipo" asp-route-id="@Model.Id">
+                            <button type="submit" class="btn btn-danger" style="margin:30px;">Eliminar tipo de proveedor</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        handleRegisterResponse('@ViewBag.Success');
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        $(".checkbox").on('change', function () {
+            var isChecked = $(this).is(':checked');
+            // Establecer el valor del checkbox como un booleano
+            $(this).prop('checked', isChecked);
+            // Asignar directamente el valor del checkbox como un booleano al campo 'Active'
+            $('input[name="Active"]').val(isChecked);
+            console.log($('input[name="Active"]').val()); // Mostrar el valor en la consola (opcional)
+        });
+
+        @if (ViewBag.Success != null && (bool)ViewBag.Success)
+        {
+            // Mostrar SweetAlert si el registro fue exitoso
+            <text>
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Actualización exitosa!',
+                    text: 'Se realizaron los cambios correctamente.',
+                    showConfirmButton: false,
+                    timer: 2000
+                }).then(() => {
+                    // Redirigir al usuario a la página de inicio de sesión
+                    window.location.href = '@Url.Action("EditProveedor", "Proveedor")';
+                });
+            </text>
+        }
+        else if (ViewBag.Success != null && !(bool)ViewBag.Success)
+        {
+            // Mostrar SweetAlert si el registro falló
+            <text>
+                Swal.fire({
+                    icon: 'error',
+                    title: '¡Error al editar!',
+                    text: 'Hubo un problema al intentar editar los datos.',
+                    showConfirmButton: true
+                });
+            </text>
+        }
+    </script>
+
+
+
+
+    <!--   Core JS Files   -->
+
+    <script src="~/js/core/popper.min.js"></script>
+    <script src="~/js/core/bootstrap.min.js"></script>
+    <script src="~/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="~/js/plugins/smooth-scrollbar.min.js"></script>
+    <script>
+                                                        var win = navigator.platform.indexOf('Win') > -1;
+        if (win && document.querySelector('#sidenav-scrollbar')) {
+            var options = {
+                damping: '0.5'
+            }
+            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+        }
+    </script>
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="~/js//argon-dashboard.min.js?v=2.0.4"></script>
+</body>
+

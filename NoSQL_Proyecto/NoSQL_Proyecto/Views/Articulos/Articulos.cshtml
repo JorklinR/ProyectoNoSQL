@@ -1,0 +1,95 @@
+﻿@model IEnumerable<NoSQL_Proyecto.Models.Articulos>
+
+<body class="g-sidenav-show   bg-gray-100">
+       
+            <!--Campo para Ingresos-->
+    <div class="container-fluid py-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="card mb-4">
+                    <div class="card-header pb-0">
+                        <h6>Articulos</h6>
+                        <a asp-action="CreateArticulo" class="btn btn-primary btn-sm ms-auto">Crear</a>
+                    </div>
+                    <div class="card-body px-0 pt-0 pb-2">
+                        <div class="table-responsive p-0">
+                            <table class="table align-items-center mb-0">
+                                <thead>
+                                    <tr>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Articulo</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Disponibilidad</th>
+                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Precio</th>
+                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Cantidad</th>
+                                        <th class="text-secondary opacity-7"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    @foreach (var articulo in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex px-2 py-1">
+                                                    <div>
+                                                        <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user1">
+                                                    </div>
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        <h6 class="mb-0 text-sm">@articulo.Articulo</h6>
+                                                        <p class="text-xs text-secondary mb-0"></p>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <p class="text-xs font-weight-bold mb-0">@articulo.On_Stock</p>
+                                            </td>
+
+                                            <td class="align-middle text-center">
+                                                <span class="text-secondary text-xs font-weight-bold">@articulo.Precio</span>
+                                            </td>
+                                            <td class="align-middle text-center">
+                                                <span class="text-secondary text-xs font-weight-bold">@articulo.Unidad_Stock</span>
+                                            </td>
+                                            <td class="align-middle">
+                                                <a asp-action="EditArticulo" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user" asp-route-id="@articulo.Id">Editar</a>
+                                            </td>
+
+                                            <!-- Agrega más celdas según las propiedades de tu modelo -->
+                                        </tr>
+                                    }
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Espacio para los Ingresos-->
+       
+
+
+
+
+        <!--Fin de los Ingresos-->
+
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script>
+        var win = navigator.platform.indexOf('Win') > -1;
+        if (win && document.querySelector('#sidenav-scrollbar')) {
+            var options = {
+                damping: '0.5'
+            }
+            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+        }
+    </script>
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="../assets/js/argon-dashboard.min.js?v=2.0.4"></script>
+</body>
+
+</html>

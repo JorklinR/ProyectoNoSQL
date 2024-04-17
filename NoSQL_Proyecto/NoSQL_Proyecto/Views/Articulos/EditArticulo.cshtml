@@ -1,4 +1,6 @@
-﻿@model NoSQL_Proyecto.Models.Proveedor
+﻿@model NoSQL_Proyecto.Models.Articulos
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
 <body class="g-sidenav-show bg-gray-100">
 
@@ -6,41 +8,41 @@
     <div class="container-fluid py-4">
         <div class="row">
             <div class="col-md-8">
-                <form method="post" asp-action="EditProveedor" enctype="multipart/form-data">
+                <form method="post" asp-action="EditArticulo" enctype="multipart/form-data">
                     <div class="card">
                         <div class="card-header pb-0">
 
                             <div class="d-flex align-items-center">
-                                <p class="mb-0">Editar Proveedor</p>
+                                <p class="mb-0">Editar Articulo</p>
                                 <button type="submit" class="btn btn-primary btn-sm ms-auto">Guardar cambios</button>
                             </div>
                         </div>
                         <div class="card-body">
                             <input type="hidden" name="Id" value="@Model.Id">
-                            <p class="text-uppercase text-sm">Información de proveedor</p>
+                            <p class="text-uppercase text-sm">Información de articulo</p>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="example-text-input" class="form-control-label">Nombre completo</label>
-                                        <input class="form-control" type="text" value="@Model.Nombre" name="Nombre">
+                                        <label for="example-text-input" class="form-control-label">Nombre</label>
+                                        <input asp-for="Articulo" class="form-control" type="text" value="@Model.Articulo" name="Articulo">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="example-text-input" class="form-control-label">Tipo de Proveedor</label>
-                                        <input class="form-control" type="text" value="@Model.id_Tipo_Proveedor" name="id_Tipo_Proveedor">
+                                        <label for="example-text-input" class="form-control-label">Tipo de articulo</label>
+                                        <input asp-for="id_Tipo_Articulo" class="form-control" type="text" value="@Model.id_Tipo_Articulo" name="id_Tipo_Articulo">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="example-text-input" class="form-control-label">Direccion</label>
-                                        <input class="form-control" type="text" value="@Model.Direccion" name="Direccion">
+                                        <label for="example-text-input" class="form-control-label">Fecha de ingreso</label>
+                                        <input asp-for="Fecha_Ingreso" class="form-control" type="datetime" value="@Model.Fecha_Ingreso" disabled name="Fecha_Ingreso">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="example-text-input" class="form-control-label">Mail</label>
-                                        <input class="form-control" type="email" value="@Model.Mail"  name="Mail">
+                                        <label for="example-text-input" class="form-control-label">Fecha de salida</label>
+                                        <input asp-for="Fecha_Salida" class="form-control" type="datetime-local" value="@Model.Fecha_Salida" name="Fecha_Salida">
                                     </div>
                                 </div>
                             </div>
@@ -48,40 +50,63 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="example-text-input" class="form-control-label">Contacto Telefonico</label>
-                                        <input class="form-control" type="number" value="@Model.Phone"  name="Phone">
+                                        <label for="example-text-input" class="form-control-label">Precio</label>
+                                        <input asp-for="Precio" class="form-control" type="number" value="@Model.Precio" name="Precio">
                                     </div>
                                 </div>
+
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="example-text-input" class="form-control-label">Activo</label>
-                                        <input class="form-control" type="text" value="@Model.Active" name="Active">
+                                        <label for="example-text-input" class="form-control-label">Cantidad</label>
+                                        <input asp-for="Unidad_Stock" class="form-control" type="number" value="@Model.Unidad_Stock" name="Unidad_Stock">
                                     </div>
                                 </div>
-                            </div>
 
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Activo</label>
+
+                                        <div class="checkbox-wrapper-9">
+                                            <input asp-for="On_Stock" class="tgl tgl-flat" id="cb4-9" type="checkbox" name="On_Stock" />
+                                            <label class="tgl-btn" for="cb4-9"></label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="col-md-4">
                 <div class="card card-profile" style="display: flex;justify-content: center; align-items: center;">
-                  
-                    <div class="d-flex justify-content-center" style="margin-top:5px">
-                        <form method="post" asp-action="DeleteProveedor" asp-route-id="@Model.Id">
-                            <button type="submit" class="btn btn-danger">Eliminar Proveedor</button>
+
+                    <div class="d-flex justify-content-center">
+                        <form method="post" asp-action="DeleteArticulo" asp-route-id="@Model.Id">
+                            <button type="submit" class="btn btn-danger" style="margin:30px;">Eliminar Articulo</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <script>
         handleRegisterResponse('@ViewBag.Success');
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script>
+        $(".checkbox").on('change', function () {
+            var isChecked = $(this).is(':checked');
+            // Establecer el valor del checkbox como un booleano
+            $(this).prop('checked', isChecked);
+            // Asignar directamente el valor del checkbox como un booleano al campo 'Active'
+            $('input[name="Active"]').val(isChecked);
+            console.log($('input[name="Active"]').val()); // Mostrar el valor en la consola (opcional)
+        });
+
         @if (ViewBag.Success != null && (bool)ViewBag.Success)
         {
             // Mostrar SweetAlert si el registro fue exitoso
@@ -94,7 +119,7 @@
                     timer: 2000
                 }).then(() => {
                     // Redirigir al usuario a la página de inicio de sesión
-                    window.location.href = '@Url.Action("EditProveedor", "Table")';
+                    window.location.href = '@Url.Action("EditProveedor", "Proveedor")';
                 });
             </text>
         }
@@ -113,13 +138,16 @@
     </script>
 
 
+
+
     <!--   Core JS Files   -->
+
     <script src="~/js/core/popper.min.js"></script>
     <script src="~/js/core/bootstrap.min.js"></script>
     <script src="~/js/plugins/perfect-scrollbar.min.js"></script>
     <script src="~/js/plugins/smooth-scrollbar.min.js"></script>
     <script>
-                var win = navigator.platform.indexOf('Win') > -1;
+                        var win = navigator.platform.indexOf('Win') > -1;
         if (win && document.querySelector('#sidenav-scrollbar')) {
             var options = {
                 damping: '0.5'

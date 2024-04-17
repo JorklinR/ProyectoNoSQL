@@ -50,5 +50,18 @@ namespace NoSQL_Proyecto.Services
             var collection = GetCollection(collectionName);
             await collection.DeleteOneAsync(x => x.Id == id);
         }
+
+        public async Task<int> GetTotalIngresos(string collectionName)
+        {
+            var collection = GetCollection(collectionName);
+            var documentos = await collection.Find(_ => true).ToListAsync();
+
+            // Sumar los valores de 'Cantidad_Ingresada' en todos los documentos
+            int sumaTotal = documentos.Sum(d => d.Cantidad_Ingresada);
+
+            return sumaTotal;
+        }
+
+
     }
 }

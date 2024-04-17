@@ -50,5 +50,20 @@ namespace NoSQL_Proyecto.Services
             var collection = GetCollection(collectionName);
             await collection.DeleteOneAsync(x => x.Id == id);
         }
+
+        public async Task<List<Proveedor>> GetRecentProvider(string collectionName)
+        {
+            var collection = GetCollection(collectionName);
+
+            // Ordenar los documentos por fecha de creación de forma descendente
+            var sortedDocuments = await collection.Find(_ => true)
+                                                 .SortByDescending(p => p.id_Tipo_Proveedor)
+                                                 .ToListAsync();
+
+            // Tomar los primeros 4 documentos (proveedores más recientes)
+            var recentProviders = sortedDocuments.Take(4).ToList();
+
+            return recentProviders;
+        }
     }
 }

@@ -9,79 +9,163 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NoSQL_Proyecto
 build_property.RootNamespace = NoSQL_Proyecto
-build_property.ProjectDir = C:\Users\Owens\OneDrive\Documentos\GitHub\ProyectoNoSQL\NoSQL_Proyecto\NoSQL_Proyecto\
+build_property.ProjectDir = C:\Users\Jorklin\Documents\GitHub\ProyectoNoSQL\NoSQL_Proyecto\NoSQL_Proyecto\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\Owens\OneDrive\Documentos\GitHub\ProyectoNoSQL\NoSQL_Proyecto\NoSQL_Proyecto
+build_property.MSBuildProjectDirectory = C:\Users\Jorklin\Documents\GitHub\ProyectoNoSQL\NoSQL_Proyecto\NoSQL_Proyecto
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Account/Login.cshtml]
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Account/Profile.cshtml]
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Account/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Account/Register.cshtml]
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Home/Index.cshtml]
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Articulos/Articulos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWN1bG9zXEFydGljdWxvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Articulos/CreateArticulo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWN1bG9zXENyZWF0ZUFydGljdWxvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Articulos/EditArticulo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWN1bG9zXEVkaXRBcnRpY3Vsby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Home/Privacy.cshtml]
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Movimientos/Ingresos.cshtml]
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/MetodoPago/CreateMetodo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0b2RvUGFnb1xDcmVhdGVNZXRvZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/MetodoPago/EditMetodo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0b2RvUGFnb1xFZGl0TWV0b2RvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/MetodoPago/Metodos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0b2RvUGFnb1xNZXRvZG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/MotivoSalida/CreateMotivo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW90aXZvU2FsaWRhXENyZWF0ZU1vdGl2by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/MotivoSalida/EditMotivo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW90aXZvU2FsaWRhXEVkaXRNb3Rpdm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/MotivoSalida/Motivos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW90aXZvU2FsaWRhXE1vdGl2b3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Movimientos/Ingresos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b3NcSW5ncmVzb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Movimientos/Salidas.cshtml]
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Movimientos/Salidas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b3NcU2FsaWRhcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Shared/Error.cshtml]
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Proveedor/CreateProveedor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXENyZWF0ZVByb3ZlZWRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Proveedor/EditProveedor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXEVkaXRQcm92ZWVkb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Proveedor/Proveedor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXFByb3ZlZWRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Table/EditProveedor.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcRWRpdFByb3ZlZWRvci5jc2h0bWw=
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Table/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Table/Proveedor.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcUHJvdmVlZG9yLmNzaHRtbA==
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/TipoArticulo/CreateTipo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0FydGljdWxvXENyZWF0ZVRpcG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Table/Tables.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcVGFibGVzLmNzaHRtbA==
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/TipoArticulo/EditTipo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0FydGljdWxvXEVkaXRUaXBvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/_ViewImports.cshtml]
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/TipoArticulo/TipoArticulos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0FydGljdWxvXFRpcG9BcnRpY3Vsb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/TipoProveedor/CreateTipo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1Byb3ZlZWRvclxDcmVhdGVUaXBvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/TipoProveedor/EditTipo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1Byb3ZlZWRvclxFZGl0VGlwby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/TipoProveedor/TipoProveedores.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1Byb3ZlZWRvclxUaXBvUHJvdmVlZG9yZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/TipoUsuario/CreateTipo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1VzdWFyaW9cQ3JlYXRlVGlwby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/TipoUsuario/EditTipo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1VzdWFyaW9cRWRpdFRpcG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/TipoUsuario/TipoUsuarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1VzdWFyaW9cVGlwb1VzdWFyaW9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Usuarios/EditUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdFVzdWFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Usuarios/Usuarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcVXN1YXJpb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/_ViewStart.cshtml]
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owens/OneDrive/Documentos/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Shared/_Layout.cshtml]
+[C:/Users/Jorklin/Documents/GitHub/ProyectoNoSQL/NoSQL_Proyecto/NoSQL_Proyecto/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-u0ovfh8qk0

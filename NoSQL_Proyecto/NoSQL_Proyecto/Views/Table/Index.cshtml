@@ -1,0 +1,91 @@
+﻿
+
+<body class="g-sidenav-show bg-gray-100">
+
+    <div class="container-fluid py-4">
+        <div class="row">
+            <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header pb-0">
+                            <div class="d-flex align-items-center">
+                                <p class="mb-0">Tipos de tablas</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                      
+                                    <a href="@Url.Action("Articulos","Articulos")" class="btn btn-primary btn-sm ms-auto">Articulos</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                    <a href="@Url.Action("Proveedor","Proveedor")" class="btn btn-primary btn-sm ms-auto">Proveedores</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                    <a href="@Url.Action("Metodos","MetodoPago")" class="btn btn-primary btn-sm ms-auto">Metodos de pago</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                    <a href="@Url.Action("Motivos","MotivoSalida")"  class="btn btn-primary btn-sm ms-auto">Motivos de salida</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                    <a href="@Url.Action("TipoArticulos","TipoArticulo")" class="btn btn-primary btn-sm ms-auto">Tipos de articulos</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                    <a href="@Url.Action("TipoUsuarios","TipoUsuario")" class="btn btn-primary btn-sm ms-auto"> Tipos de usuarios</a>
+                                    </div>
+                                </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <a href="@Url.Action("TipoProveedores","TipoProveedor")" class="btn btn-primary btn-sm ms-auto"> Tipos proveedores</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <a href="@Url.Action("Usuarios","Usuarios")" class="btn btn-primary btn-sm ms-auto">Usuarios</a>
+                                </div>
+                            </div>
+                            </div>
+
+                        </div>
+                    </div>
+      
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--   Core JS Files   -->
+    <script src="~/js/core/popper.min.js"></script>
+    <script src="~/js/core/bootstrap.min.js"></script>
+    <script src="~/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="~/js/plugins/smooth-scrollbar.min.js"></script>
+    <script>
+                                var win = navigator.platform.indexOf('Win') > -1;
+        if (win && document.querySelector('#sidenav-scrollbar')) {
+            var options = {
+                damping: '0.5'
+            }
+            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+        }
+    </script>
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="~/js//argon-dashboard.min.js?v=2.0.4"></script>
+
+</body>

@@ -13,8 +13,4 @@ namespace NoSQL_Proyecto.Models
 
     }
 
-    public class Tipo_UsuariosViewModel
-    {
-        public string Descripcion_Rol { get; set; }
-    }
 }
