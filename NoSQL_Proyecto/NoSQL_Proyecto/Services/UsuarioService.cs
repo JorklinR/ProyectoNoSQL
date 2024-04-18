@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Options;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using NoSQL_Proyecto.Models;
@@ -75,6 +76,21 @@ namespace NoSQL_Proyecto.Services
 
             return totalUsuariosActivos;
         }
+
+        public bool UsuarioTieneRol(string nombreUsuario)
+        {
+            // Construye el filtro para buscar el usuario por nombre de usuario
+            var filter = Builders<Usuarios>.Filter.Eq(u => u.Username, nombreUsuario);
+
+            // Realiza la consulta para encontrar el usuario que coincide con el nombre de usuario
+            var usuario = _usuariosCollection.Find(filter).FirstOrDefault();
+
+            // Si el usuario existe, verifica si tiene el rol deseado
+            // Aquí asumimos que el id del tipo de usuario es un ObjectId
+            var tipoUsuarioObjectId = new ObjectId("660dc3e881c5953b240d5f50");
+            return usuario != null && usuario.id_Tipo_Usuario == tipoUsuarioObjectId;
+        }
+
     }
 
 }

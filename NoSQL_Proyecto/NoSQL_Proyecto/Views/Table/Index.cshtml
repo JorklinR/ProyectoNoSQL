@@ -1,4 +1,12 @@
-﻿
+﻿@using NoSQL_Proyecto.Services
+@using Microsoft.AspNetCore.Http
+
+@inject UsuarioService _usuarioService
+
+@{
+    string username = Context.Request.Cookies["Username"];
+    bool usuarioTieneRol = _usuarioService.UsuarioTieneRol(username);
+}
 
 <body class="g-sidenav-show bg-gray-100">
 
@@ -41,23 +49,29 @@
                                     <a href="@Url.Action("TipoArticulos","TipoArticulo")" class="btn btn-primary btn-sm ms-auto">Tipos de articulos</a>
                                     </div>
                                 </div>
+                                 @if (usuarioTieneRol)
+                            {
                                 <div class="col-md-3">
                                     <div class="form-group">
                                     <a href="@Url.Action("TipoUsuarios","TipoUsuario")" class="btn btn-primary btn-sm ms-auto"> Tipos de usuarios</a>
                                     </div>
                                 </div>
+                            }
 
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <a href="@Url.Action("TipoProveedores","TipoProveedor")" class="btn btn-primary btn-sm ms-auto"> Tipos proveedores</a>
                                 </div>
                             </div>
-
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <a href="@Url.Action("Usuarios","Usuarios")" class="btn btn-primary btn-sm ms-auto">Usuarios</a>
+       
+                            @if (usuarioTieneRol)
+                            {
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <a href="@Url.Action("Usuarios","Usuarios")" class="btn btn-primary btn-sm ms-auto">Usuarios</a>
+                                    </div>
                                 </div>
-                            </div>
+                            }
                             </div>
 
                         </div>
